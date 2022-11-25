@@ -15,7 +15,6 @@ public class CarsController {
 
     private final CarDAO carDAO;
 
-    @Autowired
     public CarsController(CarDAO carDAO) {
         this.carDAO = carDAO;
     }

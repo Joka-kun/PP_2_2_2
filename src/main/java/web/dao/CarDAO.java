@@ -22,9 +22,8 @@ public class CarDAO {
 
 
     public List<Car> getCars(int count) {
-        if (count > 0) {
+        if (count >= 0) {
             return cars.stream().limit(count).collect(Collectors.toList());
-        }
-        return null;
+        } else return cars;
     }
 }
